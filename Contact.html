@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ramon Christopher | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-interactive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.11/build/spline-viewer.js"></script>
+  <link rel="icon" type="image/png" href="images/boy.png">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <div class="logo">
+        <h2>RCAF</h2>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="#" class="active">Contact</a></li>
+      </ul>
+
+      <!-- Language & Login -->
+      <div class="nav-actions">
+        <div class="lang">
+        </div>
+        <a href="Index.html" class="login-btn">Read More</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- contact Section -->
+  
+  <section class="contact-section">
+
+    <!-- Contact Info -->
+    <div class="contact-left">
+        <h2>CONTACT ME</h2>
+        <p>I'm open to freelance work, full-time work, collaborations, or just a quick chat about tech. Feel free to reach out. I'd love to connect!</p>
+
+        <div class="contact-info">
+            <p><span>&#128233</span> ramonchristopherfuerte0@gmail.com</p>
+            <p><span>&#128222</span> 0965 285 0943</p>
+            <p><span>&#128206</span> www.linkedin.com/in/ramon-christopher-fuerte-6664a8250e</p>
+            <p><span>&#128205</span> Based in the Philippines</p>
+        </div>
+
+        <div class="contact-note">Available for remote work and local projects</div><br>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-right">
+        <form action="https://formspree.io/f/xzzgagdn" method="POST" class="contact-form">
+            <div style="display: flex; gap: 15px;">
+                <input type="text" placeholder="First Name" name="firstame" style="flex: 1;">
+                <input type="text" placeholder="Last Name" name="lastName" style="flex: 1;">
+            </div>
+            <input type="email" placeholder="Email" name="email">
+            <textarea placeholder="Your Message" name="message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</section>
+
+<script>
+   // Clear form on page load/refresh
+   window.addEventListener('DOMContentLoaded', function() {
+    form.reset();
+  });
+  window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+      window.location.reload();
+    }
+  });
+  </script>
+<!-- Thank You Modal
+<div id="thankYouModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.4); z-index:9999; align-items:center; justify-content:center;">
+  <div style="background:#fff; color:#222; padding:40px 30px; border-radius:12px; box-shadow:0 8px 32px rgba(0,0,0,0.18); text-align:center; min-width:300px; max-width:90vw;">
+    <h2 style="margin-bottom:16px;">Thank You!</h2>
+    <p>Your message has been sent.</p>
+    <button id="closeModalBtn" style="margin-top:24px; padding:10px 28px; background:#5da3f3; color:#fff; border:none; border-radius:6px; font-size:16px; cursor:pointer;">Close</button>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const modal = document.getElementById('thankYouModal');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+
+  // Clear form on page load/refresh
+  window.addEventListener('DOMContentLoaded', function() {
+    form.reset();
+  });
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    modal.style.display = 'flex';
+    form.reset();
+  });
+
+  closeModalBtn.addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+
+  // Optional: close modal on outside click
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+</script> -->
+
+<!-- Footer Section -->
+<footer>
+  <hr>
+  <div class="footer-content">
+    <p>&copy; Copyright 2025, All Rights Reserved by RCAF</p>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/ramonchristopher.fuerte"><i class="fab fa-facebook" target="_blank" rel="noopener noreferrer"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ramon-christopher-fuerte-6664a8250"><i class="fab fa-linkedin" target="_blank" rel="noopener noreferrer"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
